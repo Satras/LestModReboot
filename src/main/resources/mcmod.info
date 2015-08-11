@@ -1,0 +1,21 @@
+[
+{
+    "modid": "LetsModReboot",
+    "name": "Lets Mod Reboot",
+    "description": "Pahimar's Let's Mod Reboot - Episodes",
+    "version": "0.1",
+    "credits": "",
+    "logoFile": "",
+    "mcversion": "1.7.10",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+        "Pahimar", "Mojah75"
+    ],
+    "parent":"",
+    "screenshots": [
+    ],
+    "dependencies": [
+    ]
+}
+]
