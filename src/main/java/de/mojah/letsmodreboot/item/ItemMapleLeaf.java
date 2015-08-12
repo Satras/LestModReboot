@@ -6,5 +6,7 @@ public class ItemMapleLeaf extends ItemLMRB {
 
         super();
         this.setUnlocalizedName("mapleLeaf");
+
+
     }
 }

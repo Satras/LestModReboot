@@ -22,7 +22,7 @@ group= "de.mojah.letsmodreboot" // http://maven.apache.org/guides/mini/guide-nam
 archivesBaseName = "LetModReboot"
 
 minecraft {
-    version = "1.7.10-10.13.4.1448"
+    version = "1.7.10-10.13.4.1492-1.7.10"
     runDir = "eclipse"
 }
 

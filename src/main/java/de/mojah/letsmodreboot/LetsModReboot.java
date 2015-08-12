@@ -9,9 +9,12 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import de.mojah.letsmodreboot.handler.ConfigurationHandler;
 import de.mojah.letsmodreboot.init.ModBlocks;
 import de.mojah.letsmodreboot.init.ModItems;
+import de.mojah.letsmodreboot.init.Recipes;
 import de.mojah.letsmodreboot.proxy.IProxy;
 import de.mojah.letsmodreboot.reference.Reference;
 import de.mojah.letsmodreboot.utility.LogHelper;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 @Mod(modid= Reference.MOD_ID, name=Reference.MOD_NAME, version=Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class LetsModReboot {
@@ -39,12 +42,23 @@ public class LetsModReboot {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         // Recepiece
+        Recipes.init();
 
         LogHelper.info("Initialization Complete");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+
+        /*
+        for(String oreName : OreDictionary.getOreNames()) {
+            LogHelper.info(oreName);
+
+            LogHelper.info("      "+OreDictionary.getOres(oreName).toString());
+        }
+        */
+
+
         //
 
         LogHelper.info("Post Initialization Complete");
