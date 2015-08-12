@@ -6,6 +6,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 import de.mojah.letsmodreboot.handler.ConfigurationHandler;
 import de.mojah.letsmodreboot.init.ModBlocks;
 import de.mojah.letsmodreboot.init.ModItems;
@@ -13,6 +14,7 @@ import de.mojah.letsmodreboot.init.Recipes;
 import de.mojah.letsmodreboot.proxy.IProxy;
 import de.mojah.letsmodreboot.reference.Reference;
 import de.mojah.letsmodreboot.utility.LogHelper;
+import de.mojah.letsmodreboot.worldgeneration.WorldgenerationLMRB;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
@@ -44,6 +46,8 @@ public class LetsModReboot {
     public void init(FMLInitializationEvent event) {
         // Recepiece
         Recipes.init();
+
+        GameRegistry.registerWorldGenerator(new WorldgenerationLMRB(),0);
 
         LogHelper.info("Initialization Complete");
     }
