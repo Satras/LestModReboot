@@ -13,6 +13,7 @@ import de.mojah.letsmodreboot.init.Recipes;
 import de.mojah.letsmodreboot.proxy.IProxy;
 import de.mojah.letsmodreboot.reference.Reference;
 import de.mojah.letsmodreboot.utility.LogHelper;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
@@ -59,7 +60,7 @@ public class LetsModReboot {
         */
 
 
-        //
+//
 
         LogHelper.info("Post Initialization Complete");
     }

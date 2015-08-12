@@ -5,6 +5,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import de.mojah.letsmodreboot.creativetab.CreativeTabLMRB;
 import de.mojah.letsmodreboot.reference.Reference;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 
@@ -18,7 +19,7 @@ public class BlockLMRB extends Block {
     }
 
     public BlockLMRB() {
-        this(Material.wood);
+        this(new Material(MapColor.stoneColor));
     }
 
     @Override
