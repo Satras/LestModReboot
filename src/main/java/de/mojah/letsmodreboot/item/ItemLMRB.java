@@ -2,6 +2,7 @@ package de.mojah.letsmodreboot.item;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import de.mojah.letsmodreboot.creativetab.CreativeTabLMRB;
 import de.mojah.letsmodreboot.reference.Reference;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ public class ItemLMRB extends Item {
     public ItemLMRB() {
 
         super();
+        this.setCreativeTab(CreativeTabLMRB.LMRB_TAB);
 
     }
 

@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import de.mojah.letsmodreboot.handler.ConfigurationHandler;
+import de.mojah.letsmodreboot.init.ModBlocks;
 import de.mojah.letsmodreboot.init.ModItems;
 import de.mojah.letsmodreboot.proxy.IProxy;
 import de.mojah.letsmodreboot.reference.Reference;
@@ -31,6 +32,7 @@ public class LetsModReboot {
 
         // Blocks
         ModItems.init();
+        ModBlocks.init();
 
         LogHelper.info("Pre Initialization Complete");
     }
